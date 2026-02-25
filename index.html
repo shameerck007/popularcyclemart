@@ -124,7 +124,6 @@ nav a:hover{opacity:.75;}
 .pbadge{position:absolute;top:10px;right:10px;background:#ff4757;color:#fff;padding:.22rem .7rem;border-radius:20px;font-size:.76rem;font-weight:700;}
 .disc-badge{position:absolute;top:10px;left:10px;background:#2ed573;color:#fff;padding:.22rem .7rem;border-radius:20px;font-size:.76rem;font-weight:700;}
 .out-badge{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,.65);color:#fff;padding:.5rem 1rem;border-radius:8px;font-size:1rem;font-weight:700;}
-/* Wishlist heart button */
 .wish-btn{position:absolute;top:10px;right:10px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.9);border:none;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .25s;box-shadow:0 2px 8px rgba(0,0,0,.15);z-index:5;}
 .wish-btn:hover{transform:scale(1.15);}
 .wish-btn.wished{background:#fff0f2;color:#ff4757;}
@@ -134,7 +133,6 @@ nav a:hover{opacity:.75;}
 .pdesc{color:#7f8c8d;font-size:.86rem;margin-bottom:.7rem;line-height:1.5;}
 .pspecs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem;}
 .spec{color:#555;font-size:.77rem;background:#f0f2f8;padding:.18rem .45rem;border-radius:6px;}
-/* Stars */
 .star-row{display:flex;align-items:center;gap:.4rem;margin-bottom:.7rem;}
 .stars{color:var(--star);font-size:.88rem;letter-spacing:1px;}
 .stars-empty{color:#ddd;}
@@ -189,7 +187,6 @@ nav a:hover{opacity:.75;}
 .wa-btn:hover{transform:scale(1.02);box-shadow:0 5px 18px rgba(37,211,102,.35);}
 .empty-msg{text-align:center;padding:3rem;color:#bbb;font-size:1rem;}
 .empty-msg span{display:block;font-size:3rem;margin-bottom:.8rem;}
-/* Wishlist items */
 .witem{display:flex;gap:1rem;padding:.85rem 0;border-bottom:1px solid #f0f0f0;align-items:center;}
 .witem-img{width:55px;height:55px;border-radius:10px;background:#f0f2f8;display:flex;align-items:center;justify-content:center;font-size:1.8rem;overflow:hidden;flex-shrink:0;}
 .witem-img img{width:55px;height:55px;border-radius:10px;object-fit:cover;}
@@ -213,15 +210,13 @@ nav a:hover{opacity:.75;}
 .rtextarea:focus{border-color:var(--c1);}
 .rev-submit{width:100%;background:var(--grad);color:#fff;border:none;padding:.8rem;border-radius:10px;font-weight:700;font-family:var(--font);font-size:.97rem;cursor:pointer;transition:transform .2s;}
 .rev-submit:hover{transform:scale(1.02);}
-.rev-foot{display:flex;gap:.6rem;padding:1rem 1.5rem;border-top:1px solid #f0f0f0;}
-.rev-cancel{flex:1;background:#f0f2f5;color:#555;border:none;padding:.7rem;border-radius:10px;cursor:pointer;font-family:var(--font);font-weight:600;}
 
 /* ══ TOAST ══ */
 .toast{position:fixed;top:80px;right:20px;background:#10ac84;color:#fff;padding:.85rem 1.35rem;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,.2);z-index:9999;font-weight:600;transform:translateX(300%);transition:transform .35s cubic-bezier(.34,1.56,.64,1);max-width:320px;font-size:.91rem;}
 .toast.show{transform:translateX(0);}
 .toast.warn{background:#e67e22;}
 
-/* ══ ADMIN / FOOTER (keep original styles) ══ */
+/* ══ FOOTER ══ */
 footer{background:var(--footerBg);color:#fff;padding:2.5rem 1.5rem;margin-top:3rem;}
 .ftr-grid{max-width:1260px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;}
 .ftr-sec h3{margin-bottom:.8rem;color:var(--c1);}
@@ -328,9 +323,7 @@ tr:hover td{background:#fafbff;}
 .btn-cancel{background:#f0f2f5;color:#555;border:none;padding:.6rem 1.2rem;border-radius:9px;cursor:pointer;font-weight:600;font-size:.88rem;font-family:var(--font);}
 .btn-save{background:var(--grad);color:#fff;border:none;padding:.6rem 1.4rem;border-radius:9px;cursor:pointer;font-weight:700;font-size:.88rem;font-family:var(--font);}
 
-/* ══════════════════════════════════════
-   MOBILE HAMBURGER MENU
-══════════════════════════════════════ */
+/* ══ MOBILE HAMBURGER ══ */
 .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.4rem;z-index:1000;}
 .hamburger span{display:block;width:24px;height:2.5px;background:#fff;border-radius:2px;transition:all .3s;}
 .hamburger.open span:nth-child(1){transform:translateY(7.5px) rotate(45deg);}
@@ -344,7 +337,7 @@ tr:hover td{background:#fafbff;}
 .mobile-nav-header .logo{color:#fff;font-family:var(--display);font-size:1.2rem;font-weight:800;}
 .mobile-nav-links{padding:.8rem 0;}
 .mobile-nav-links a{display:flex;align-items:center;gap:.8rem;padding:.9rem 1.4rem;color:#2c3e50;text-decoration:none;font-weight:600;font-size:1rem;border-bottom:1px solid #f5f5f5;transition:background .2s;}
-.mobile-nav-links a:hover,.mobile-nav-links a:active{background:#f0f2ff;color:var(--c1);}
+.mobile-nav-links a:hover{background:#f0f2ff;color:var(--c1);}
 .mobile-nav-links a .mnav-icon{font-size:1.2rem;width:28px;text-align:center;}
 .mobile-nav-bottom{padding:1rem 1.4rem;border-top:2px solid #f0f0f0;display:flex;gap:.6rem;}
 .mobile-cart-btn,.mobile-wish-btn{flex:1;padding:.7rem;border-radius:10px;border:none;font-weight:700;font-family:var(--font);cursor:pointer;font-size:.9rem;position:relative;}
@@ -352,7 +345,7 @@ tr:hover td{background:#fafbff;}
 .mobile-wish-btn{background:#fff0f2;color:#ff4757;border:2px solid #ffd0d8;}
 .mobile-nav-badge{background:#ff4757;color:#fff;border-radius:50%;width:18px;height:18px;font-size:.68rem;display:inline-flex;align-items:center;justify-content:center;margin-left:.3rem;font-weight:700;}
 
-/* ══ BOTTOM NAV BAR (mobile only) ══ */
+/* ══ BOTTOM NAV ══ */
 .bottom-nav{display:none;position:fixed;bottom:0;left:0;right:0;background:#fff;z-index:800;box-shadow:0 -2px 16px rgba(0,0,0,.1);padding:.4rem 0 env(safe-area-inset-bottom,.4rem);border-top:1px solid #eee;}
 .bottom-nav-inner{display:flex;justify-content:space-around;align-items:center;}
 .bnav-item{display:flex;flex-direction:column;align-items:center;gap:.15rem;padding:.35rem .6rem;cursor:pointer;color:#aaa;transition:color .2s;position:relative;border:none;background:none;font-family:var(--font);min-width:52px;}
@@ -362,207 +355,40 @@ tr:hover td{background:#fafbff;}
 .bnav-badge{position:absolute;top:2px;right:4px;background:#ff4757;color:#fff;border-radius:50%;width:16px;height:16px;font-size:.6rem;display:flex;align-items:center;justify-content:center;font-weight:700;}
 .bnav-wish-badge{background:#f39c12;}
 
-/* Mobile body padding for bottom nav */
-.has-bottom-nav body,body.has-bottom-nav{padding-bottom:70px;}
-
-/* ══ PULL-TO-REFRESH indicator ══ */
-.ptr-indicator{position:fixed;top:0;left:0;right:0;height:0;background:var(--grad);display:flex;align-items:flex-end;justify-content:center;z-index:1500;transition:height .2s;overflow:hidden;}
-.ptr-indicator span{color:#fff;font-size:.82rem;padding:.4rem;font-weight:600;}
-
-/* ══════════════════════════════════════
-   TABLET — max 1024px
-══════════════════════════════════════ */
-@media(max-width:1024px){
-  .cat-grid{grid-template-columns:repeat(3,1fr);}
-  .gallery-grid{grid-template-columns:repeat(3,1fr);grid-template-rows:200px 200px;}
-}
-
-/* ══════════════════════════════════════
-   TABLET/LANDSCAPE — max 900px
-══════════════════════════════════════ */
-@media(max-width:900px){
-  .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;}
-  .gi-tall,.gi-wide{grid-row:auto;grid-column:auto;}
-  .cat-grid{grid-template-columns:repeat(3,1fr);}
-  .slide-content h1{font-size:2.2rem;}
-  .pgrid{grid-template-columns:repeat(auto-fill,minmax(240px,1fr));}
-}
-
-/* ══════════════════════════════════════
-   MOBILE — max 768px
-══════════════════════════════════════ */
+/* ══ RESPONSIVE ══ */
+@media(max-width:1024px){.cat-grid{grid-template-columns:repeat(3,1fr);}.gallery-grid{grid-template-columns:repeat(3,1fr);grid-template-rows:200px 200px;}}
+@media(max-width:900px){.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;}.gi-tall,.gi-wide{grid-row:auto;grid-column:auto;}.cat-grid{grid-template-columns:repeat(3,1fr);}.slide-content h1{font-size:2.2rem;}.pgrid{grid-template-columns:repeat(auto-fill,minmax(240px,1fr));}}
 @media(max-width:768px){
-  /* Show hamburger, hide desktop nav */
   .hamburger{display:flex;}
-  nav a, nav .cart-btn, nav .wishlist-btn{display:none;}
-
-  /* Show bottom nav */
+  nav a,nav .cart-btn,nav .wishlist-btn{display:none;}
   .bottom-nav{display:block;}
   #storefront{padding-bottom:65px;}
-
-  /* Header */
-  .hdr{padding:0 1rem;}
-  .logo{font-size:1.25rem;}
-
-  /* Hero */
+  .hdr{padding:0 1rem;}.logo{font-size:1.25rem;}
   .hero-cinematic{height:92vh;min-height:500px;}
-  .slide-content{padding:1.5rem 1rem;}
-  .slide-content h1{font-size:1.65rem;line-height:1.2;}
-  .slide-content p{font-size:.9rem;}
-  .hero-tagline{font-size:.78rem!important;}
-  .hero-btns{gap:.6rem;margin-top:1.2rem;}
-  .hbtn{padding:.6rem 1.4rem;font-size:.88rem;}
-  .search-hero{margin-top:1.3rem;padding:0 .8rem;}
-  .search-wrap input{font-size:16px;} /* prevents iOS zoom on focus */
-  .hero-dots{bottom:1.2rem;}
-  .harrow{display:none;}
-  .scroll-hint{display:none;}
-  .slide-badge{font-size:.78rem;padding:.35rem .9rem;}
-
-  /* Why strip */
-  .why-strip{padding:.8rem 1rem;overflow-x:auto;}
-  .why-inner{flex-nowrap:nowrap;gap:.6rem;justify-content:flex-start;}
-  .why-item{flex-shrink:0;padding:.3rem .5rem;}
-  .why-icon{font-size:1.4rem;}
-  .why-item strong{font-size:.82rem;}
-  .why-item p{font-size:.7rem;}
-
-  /* Gallery */
-  .gallery-section{margin:2rem auto;padding:0 1rem;}
-  .gallery-grid{grid-template-columns:1fr 1fr;gap:8px;}
-  .gi-tall,.gi-wide{grid-row:auto;grid-column:auto;}
-  .gallery-grid .gallery-item{height:130px;}
-  .gallery-header h2,.cat-header h2,.section-title h2{font-size:1.55rem;}
-
-  /* Categories */
-  .cat-section{margin:1.5rem auto;padding:0 1rem;}
-  .cat-grid{grid-template-columns:repeat(3,1fr);gap:9px;}
-  .cat-card{height:155px;}
-  .cat-name{font-size:.82rem;}
-  .cat-sub{font-size:.66rem;}
-  .cat-emoji{font-size:1.6rem;}
-
-  /* Filters */
-  .filters-bar{padding:0 1rem;gap:.5rem;overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
-  .filters-bar::-webkit-scrollbar{display:none;}
-  .fbtn{white-space:nowrap;padding:.42rem 1rem;font-size:.82rem;flex-shrink:0;}
-  .sort-select{flex-shrink:0;font-size:.82rem;min-width:150px;}
-  .results-info{padding:0 1rem;font-size:.78rem;}
-
-  /* Product Grid */
-  .container{padding:0 1rem;margin-top:1rem;}
-  .pgrid{grid-template-columns:1fr 1fr;gap:1rem;}
-  .pcard{border-radius:12px;}
-  .pimg{height:160px;}
-  .emoji-placeholder{font-size:3.5rem;}
-  .pname{font-size:.95rem;margin:.2rem 0;}
-  .pdesc{font-size:.78rem;margin-bottom:.5rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
-  .pspecs{gap:.3rem;margin-bottom:.5rem;}
-  .spec{font-size:.7rem;padding:.14rem .38rem;}
-  .pinfo{padding:.85rem .8rem;}
-  .pcat{font-size:.7rem;}
-  .price-block .final{font-size:1.1rem;}
-  .price-block .orig{font-size:.75rem;}
-  .price-block .saving{font-size:.68rem;}
-  .atc{padding:.46rem .85rem;font-size:.78rem;}
-  .pfoot{padding-top:.6rem;}
-  .star-row{gap:.25rem;margin-bottom:.5rem;}
-  .stars,.stars-empty{font-size:.78rem;}
-  .review-count{font-size:.68rem;}
-  .wish-btn{width:28px;height:28px;font-size:.9rem;top:7px;right:7px;}
-  .pbadge{font-size:.66rem;padding:.18rem .5rem;right:38px;}
-  .disc-badge{font-size:.66rem;padding:.18rem .5rem;}
-
-  /* Modals */
-  .modal-box{width:100%;max-width:100%;border-radius:20px 20px 0 0;max-height:90vh;position:fixed;bottom:0;left:0;right:0;}
-  .modal-overlay.open{align-items:flex-end;}
-  .rev-modal{width:100%;border-radius:20px 20px 0 0;max-height:90vh;overflow-y:auto;}
-  .modal-hdr{padding:1rem 1.2rem;}
-  .modal-hdr h2{font-size:1.1rem;}
-  .cart-items,.modal-scroll{padding:.8rem 1rem;}
-  .cart-foot{padding:.9rem 1rem;}
-  .wa-btn{font-size:.92rem;padding:.78rem;}
-  .cart-total-row{font-size:1rem;}
-  .citem{gap:.7rem;}
-  .citem-img{width:46px;height:46px;}
-  .citem-name{font-size:.85rem;}
-  .citem-price{font-size:.82rem;}
-
-  /* Reviews */
-  .reviews-section{padding:0 1rem;margin:2rem auto;}
-  .reviews-grid{grid-template-columns:1fr;gap:1rem;}
-  .rcard{padding:1.1rem;}
-  .rtext{font-size:.84rem;}
-  .write-review-btn{font-size:.85rem;padding:.55rem 1.1rem;}
-
-  /* Review modal */
-  .fmodal-overlay{padding:0;}
-  .fmodal{border-radius:20px 20px 0 0;max-height:92vh;position:fixed;bottom:0;left:0;right:0;width:100%;max-width:100%;}
-  .frow{grid-template-columns:1fr;}
-  .srow{grid-template-columns:1fr;}
-  .settings-grid{grid-template-columns:1fr;}
-  .rinput,.rselect,.rtextarea{font-size:16px;} /* no iOS zoom */
-
-  /* Footer */
+  .slide-content{padding:1.5rem 1rem;}.slide-content h1{font-size:1.65rem;line-height:1.2;}.slide-content p{font-size:.9rem;}
+  .hero-tagline{font-size:.78rem!important;}.hero-btns{gap:.6rem;margin-top:1.2rem;}.hbtn{padding:.6rem 1.4rem;font-size:.88rem;}
+  .search-hero{margin-top:1.3rem;padding:0 .8rem;}.search-wrap input{font-size:16px;}.harrow{display:none;}.scroll-hint{display:none;}
+  .why-strip{padding:.8rem 1rem;overflow-x:auto;}.why-inner{flex-nowrap:nowrap;gap:.6rem;justify-content:flex-start;}
+  .gallery-section{margin:2rem auto;padding:0 1rem;}.gallery-grid{grid-template-columns:1fr 1fr;gap:8px;}.gallery-grid .gallery-item{height:130px;}.gallery-header h2,.cat-header h2,.section-title h2{font-size:1.55rem;}
+  .cat-section{margin:1.5rem auto;padding:0 1rem;}.cat-grid{grid-template-columns:repeat(3,1fr);gap:9px;}.cat-card{height:155px;}
+  .filters-bar{padding:0 1rem;gap:.5rem;overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none;}.filters-bar::-webkit-scrollbar{display:none;}.fbtn{white-space:nowrap;font-size:.82rem;flex-shrink:0;}.sort-select{flex-shrink:0;font-size:.82rem;min-width:150px;}
+  .container{padding:0 1rem;margin-top:1rem;}.pgrid{grid-template-columns:1fr 1fr;gap:1rem;}.pimg{height:160px;}.pname{font-size:.95rem;}.pdesc{font-size:.78rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}.pinfo{padding:.85rem .8rem;}.price-block .final{font-size:1.1rem;}.atc{padding:.46rem .85rem;font-size:.78rem;}
+  .modal-box{width:100%;max-width:100%;border-radius:20px 20px 0 0;max-height:90vh;position:fixed;bottom:0;left:0;right:0;}.modal-overlay.open{align-items:flex-end;}.rev-modal{width:100%;border-radius:20px 20px 0 0;max-height:90vh;overflow-y:auto;}
+  .reviews-section{padding:0 1rem;margin:2rem auto;}.reviews-grid{grid-template-columns:1fr;}
   footer{padding:1.8rem 1rem;margin-top:0;}
-  .ftr-grid{gap:1.2rem;}
-  .ftr-bottom{font-size:.78rem;}
-
-  /* Admin panel mobile */
-  .admin-nav-inner{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;}
-  .atab{flex-shrink:0;padding:.8rem .6rem;font-size:.8rem;}
-  .admin-logo{flex-shrink:0;}
-  .admin-body{padding:0 .8rem 4rem;}
-  .dash-cards{grid-template-columns:1fr 1fr;gap:.8rem;}
-  .dcard{padding:.9rem;gap:.6rem;}
-  .dcard-icon{width:40px;height:40px;font-size:1.15rem;}
-  .dcard-info h3{font-size:1.15rem;}
-  table{font-size:.78rem;}
-  th,td{padding:.55rem .7rem;}
-  .inp-grp input,.fgrp input,.fgrp select,.fgrp textarea,.sgrp input,.sgrp select,.sgrp textarea{font-size:16px;}
-  .login-box{padding:1.8rem 1.2rem;border-radius:16px;}
+  .admin-nav-inner{overflow-x:auto;flex-wrap:nowrap;}.atab{flex-shrink:0;font-size:.8rem;}.admin-body{padding:0 .8rem 4rem;}
+  .dash-cards{grid-template-columns:1fr 1fr;gap:.8rem;}.srow{grid-template-columns:1fr;}.settings-grid{grid-template-columns:1fr;}
+  .fmodal-overlay{padding:0;}.fmodal{border-radius:20px 20px 0 0;max-height:92vh;position:fixed;bottom:0;left:0;right:0;width:100%;max-width:100%;}.frow{grid-template-columns:1fr;}
+  .rinput,.rselect,.rtextarea,.inp-grp input,.fgrp input,.fgrp select,.fgrp textarea,.sgrp input,.sgrp select,.sgrp textarea{font-size:16px;}
 }
-
-/* ══════════════════════════════════════
-   SMALL PHONES — max 480px
-══════════════════════════════════════ */
-@media(max-width:480px){
-  .pgrid{grid-template-columns:1fr 1fr;gap:.75rem;}
-  .cat-grid{grid-template-columns:repeat(2,1fr);}
-  .cat-card{height:135px;}
-  .slide-content h1{font-size:1.45rem;}
-  .gallery-grid{grid-template-columns:1fr 1fr;gap:6px;}
-  .gallery-grid .gallery-item{height:110px;}
-  .hbtn{padding:.55rem 1.1rem;font-size:.82rem;}
-  .dash-cards{grid-template-columns:1fr 1fr;}
-}
-
-/* ══════════════════════════════════════
-   VERY SMALL PHONES — max 360px
-══════════════════════════════════════ */
-@media(max-width:360px){
-  .pgrid{grid-template-columns:1fr;}
-  .pimg{height:200px;}
-  .emoji-placeholder{font-size:5rem;}
-  .slide-content h1{font-size:1.3rem;}
-  .cat-grid{grid-template-columns:repeat(2,1fr);}
-}
-
-/* ══ TOUCH RIPPLE ══ */
-.atc,.hbtn,.fbtn,.cat-card,.pcard,.wish-btn,.write-review-btn{-webkit-tap-highlight-color:rgba(102,126,234,.15);tap-highlight-color:rgba(102,126,234,.15);}
-button,a{-webkit-tap-highlight-color:transparent;}
-
-/* ══ SMOOTH SCROLL & SAFE AREAS ══ */
+@media(max-width:480px){.pgrid{grid-template-columns:1fr 1fr;gap:.75rem;}.cat-grid{grid-template-columns:repeat(2,1fr);}.slide-content h1{font-size:1.45rem;}.gallery-grid .gallery-item{height:110px;}}
+@media(max-width:360px){.pgrid{grid-template-columns:1fr;}.pimg{height:200px;}.slide-content h1{font-size:1.3rem;}}
 html{scroll-behavior:smooth;-webkit-overflow-scrolling:touch;}
 .modal-box,.rev-modal,.fmodal{padding-bottom:env(safe-area-inset-bottom,0);}
 .bottom-nav{padding-bottom:env(safe-area-inset-bottom,4px);}
-
-/* ══ PREVENT TEXT SELECT ON BUTTONS ══ */
 button,.cat-card,.gallery-item,.atab,.bnav-item{user-select:none;-webkit-user-select:none;}
-
-/* ══ SWIPE HINT ══ */
-.swipe-hint{text-align:center;color:#bbb;font-size:.72rem;padding:.3rem 0;display:none;}
-@media(max-width:768px){.swipe-hint{display:block;}}
+.atc,.hbtn,.fbtn,.cat-card,.pcard,.wish-btn,.write-review-btn{-webkit-tap-highlight-color:rgba(102,126,234,.15);}
+button,a{-webkit-tap-highlight-color:transparent;}
 </style>
 </head>
 <body>
@@ -580,21 +406,15 @@ button,.cat-card,.gallery-item,.atab,.bnav-item{user-select:none;-webkit-user-se
       <button class="wishlist-btn" onclick="openWishlist()">❤️ Wishlist <span class="badge" id="wishCount">0</span></button>
       <button class="cart-btn" onclick="openCart()">🛒 Cart <span class="badge" id="cartCount">0</span></button>
     </nav>
-    <!-- Hamburger for mobile -->
     <button class="hamburger" id="hamburgerBtn" onclick="toggleMobileNav()" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 
-<!-- MOBILE NAV OVERLAY -->
 <div class="mobile-nav-overlay" id="mobileNavOverlay" onclick="closeMobileNav()"></div>
-
-<!-- MOBILE NAV DRAWER -->
 <div class="mobile-nav-drawer" id="mobileNavDrawer">
-  <div class="mobile-nav-header">
-    <div class="logo" style="color:#fff;font-family:var(--display);font-size:1.15rem;font-weight:800;">🚴 Popular Cycle Mart</div>
-  </div>
+  <div class="mobile-nav-header"><div class="logo" style="color:#fff;font-family:var(--display);font-size:1.15rem;font-weight:800;">🚴 Popular Cycle Mart</div></div>
   <div class="mobile-nav-links">
     <a href="#" onclick="closeMobileNav()"><span class="mnav-icon">🏠</span> Home</a>
     <a href="#products" onclick="closeMobileNav()"><span class="mnav-icon">🚴</span> Shop Bikes</a>
@@ -609,33 +429,16 @@ button,.cat-card,.gallery-item,.atab,.bnav-item{user-select:none;-webkit-user-se
   </div>
 </div>
 
-<!-- BOTTOM NAV BAR (mobile) -->
 <div class="bottom-nav" id="bottomNav">
   <div class="bottom-nav-inner">
-    <button class="bnav-item active" id="bnav-home" onclick="scrollToTop();setActiveNav('bnav-home')">
-      <span class="bnav-icon">🏠</span>
-      <span class="bnav-label">Home</span>
-    </button>
-    <button class="bnav-item" id="bnav-shop" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'});setActiveNav('bnav-shop')">
-      <span class="bnav-icon">🚴</span>
-      <span class="bnav-label">Shop</span>
-    </button>
-    <button class="bnav-item" id="bnav-search" onclick="focusSearch();setActiveNav('bnav-search')">
-      <span class="bnav-icon">🔍</span>
-      <span class="bnav-label">Search</span>
-    </button>
-    <button class="bnav-item" id="bnav-wish" onclick="openWishlist();setActiveNav('bnav-wish')">
-      <span class="bnav-icon">❤️</span>
-      <span class="bnav-label">Wishlist</span>
-      <span class="bnav-badge bnav-wish-badge" id="bnavWishCount" style="display:none;">0</span>
-    </button>
-    <button class="bnav-item" id="bnav-cart" onclick="openCart();setActiveNav('bnav-cart')">
-      <span class="bnav-icon">🛒</span>
-      <span class="bnav-label">Cart</span>
-      <span class="bnav-badge" id="bnavCartCount" style="display:none;">0</span>
-    </button>
+    <button class="bnav-item active" id="bnav-home" onclick="scrollToTop();setActiveNav('bnav-home')"><span class="bnav-icon">🏠</span><span class="bnav-label">Home</span></button>
+    <button class="bnav-item" id="bnav-shop" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'});setActiveNav('bnav-shop')"><span class="bnav-icon">🚴</span><span class="bnav-label">Shop</span></button>
+    <button class="bnav-item" id="bnav-search" onclick="focusSearch();setActiveNav('bnav-search')"><span class="bnav-icon">🔍</span><span class="bnav-label">Search</span></button>
+    <button class="bnav-item" id="bnav-wish" onclick="openWishlist();setActiveNav('bnav-wish')"><span class="bnav-icon">❤️</span><span class="bnav-label">Wishlist</span><span class="bnav-badge bnav-wish-badge" id="bnavWishCount" style="display:none;">0</span></button>
+    <button class="bnav-item" id="bnav-cart" onclick="openCart();setActiveNav('bnav-cart')"><span class="bnav-icon">🛒</span><span class="bnav-label">Cart</span><span class="bnav-badge" id="bnavCartCount" style="display:none;">0</span></button>
   </div>
 </div>
+
 <section class="hero-cinematic" id="heroSection">
   <div class="hero-slides" id="heroSlides">
     <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80')">
@@ -645,11 +448,10 @@ button,.cat-card,.gallery-item,.atab,.bnav-item{user-select:none;-webkit-user-se
         <h1 id="heroTitle">🚴 Welcome to Popular Cycle Mart</h1>
         <p id="heroSubtitle">Discover Your Perfect Ride — Premium Bikes for Every Journey</p>
         <p class="hero-tagline" id="heroTagline">Free delivery across India | Easy Returns | 1 Year Warranty</p>
-        <!-- SEARCH BAR IN HERO -->
         <div class="search-hero">
           <div class="search-wrap">
             <span class="search-icon">🔍</span>
-            <input type="text" id="heroSearch" placeholder="Search bikes by name, category..." oninput="onHeroSearch(this.value)" autocomplete="off">
+            <input type="text" id="heroSearch" placeholder="Search bikes by name, brand, category..." oninput="onHeroSearch(this.value)" autocomplete="off">
             <button class="search-clear" id="searchClearBtn" onclick="clearSearch()">✕</button>
           </div>
           <div class="search-results-count" id="searchResultsInfo"></div>
@@ -691,7 +493,6 @@ button,.cat-card,.gallery-item,.atab,.bnav-item{user-select:none;-webkit-user-se
   <div class="scroll-hint">↓ Explore Bikes</div>
 </section>
 
-<!-- WHY STRIP -->
 <div class="why-strip">
   <div class="why-inner">
     <div class="why-item"><span class="why-icon">🚚</span><div><strong>Free Delivery</strong><p>Pan India shipping</p></div></div>
@@ -702,12 +503,8 @@ button,.cat-card,.gallery-item,.atab,.bnav-item{user-select:none;-webkit-user-se
   </div>
 </div>
 
-<!-- GALLERY -->
 <section class="gallery-section" id="gallery">
-  <div class="gallery-header">
-    <h2>🌄 Life on Two Wheels</h2>
-    <p>Every ride tells a story — discover the joy of cycling</p>
-  </div>
+  <div class="gallery-header"><h2>🌄 Life on Two Wheels</h2><p>Every ride tells a story — discover the joy of cycling</p></div>
   <div class="gallery-grid">
     <div class="gallery-item gi-tall" style="background-image:url('https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?w=800&q=80')"><div class="gi-overlay"><span>Mountain Adventure</span></div></div>
     <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=800&q=80')"><div class="gi-overlay"><span>Road Freedom</span></div></div>
@@ -718,7 +515,6 @@ button,.cat-card,.gallery-item,.atab,.bnav-item{user-select:none;-webkit-user-se
   </div>
 </section>
 
-<!-- CATEGORY CARDS -->
 <section class="cat-section">
   <div class="cat-header"><h2>🚴 Shop By Category</h2><p>Find the perfect bike for your riding style</p></div>
   <div class="cat-grid">
@@ -730,7 +526,6 @@ button,.cat-card,.gallery-item,.atab,.bnav-item{user-select:none;-webkit-user-se
   </div>
 </section>
 
-<!-- FILTERS -->
 <div class="filters-bar" id="products">
   <button class="fbtn active" onclick="filterCat('all',this)">All Bikes</button>
   <button class="fbtn" onclick="filterCat('mountain',this)">🚵 Mountain</button>
@@ -748,41 +543,20 @@ button,.cat-card,.gallery-item,.atab,.bnav-item{user-select:none;-webkit-user-se
   </select>
 </div>
 <div class="results-info" id="resultsInfo"></div>
+<div class="container"><div class="pgrid" id="shopGrid"></div></div>
 
-<div class="container">
-  <div class="pgrid" id="shopGrid"></div>
-</div>
-
-<!-- REVIEWS SECTION -->
 <section class="reviews-section" id="reviews-section">
-  <div class="section-title">
-    <h2>⭐ Customer Reviews</h2>
-    <p>What our riders are saying</p>
-  </div>
-  <div style="text-align:center;">
-    <button class="write-review-btn" onclick="openReviewModal()">✍️ Write a Review</button>
-  </div>
+  <div class="section-title"><h2>⭐ Customer Reviews</h2><p>What our riders are saying</p></div>
+  <div style="text-align:center;"><button class="write-review-btn" onclick="openReviewModal()">✍️ Write a Review</button></div>
   <div class="reviews-grid" id="reviewsGrid"></div>
 </section>
 
 <footer id="footer">
   <div class="ftr-grid">
-    <div class="ftr-sec">
-      <h3 id="ftLogoText">Popular Cycle Mart</h3>
-      <p style="color:#bdc3c7;font-size:.88rem;line-height:1.7;" id="ftAbout">Your trusted partner for premium bicycles. Quality, performance and style for every ride.</p>
-    </div>
-    <div class="ftr-sec">
-      <h3>Quick Links</h3>
-      <ul><li><a href="#">Products</a></li><li><a href="#">Shipping</a></li><li><a href="#">Warranty</a></li><li><a href="#">Returns</a></li></ul>
-    </div>
-    <div class="ftr-sec">
-      <h3>Customer Service</h3>
-      <ul><li><a href="#">Contact Us</a></li><li><a href="#">FAQ</a></li><li><a href="#">Track Order</a></li><li><a href="#">Support</a></li></ul>
-    </div>
-    <div class="ftr-sec">
-      <h3>Contact Info</h3>
-      <p id="ftContact" style="color:#bdc3c7;line-height:2;font-size:.88rem;">📧 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1970777f76596976696c75786b7a607a757c74786b6d377a7674">[email&#160;protected]</a><br>📱 +91 90207 00070<br>📍 India</p>
-    </div>
+    <div class="ftr-sec"><h3 id="ftLogoText">Popular Cycle Mart</h3><p style="color:#bdc3c7;font-size:.88rem;line-height:1.7;" id="ftAbout">Your trusted partner for premium bicycles. Quality, performance and style for every ride.</p></div>
+    <div class="ftr-sec"><h3>Quick Links</h3><ul><li><a href="#">Products</a></li><li><a href="#">Shipping</a></li><li><a href="#">Warranty</a></li><li><a href="#">Returns</a></li></ul></div>
+    <div class="ftr-sec"><h3>Customer Service</h3><ul><li><a href="#">Contact Us</a></li><li><a href="#">FAQ</a></li><li><a href="#">Track Order</a></li><li><a href="#">Support</a></li></ul></div>
+    <div class="ftr-sec"><h3>Contact Info</h3><p id="ftContact" style="color:#bdc3c7;line-height:2;font-size:.88rem;">📧 info@popularcyclemart.com<br>📱 +91 90207 00070<br>📍 India</p></div>
   </div>
   <div class="ftr-bottom" id="ftCopyright">© 2026 Popular Cycle Mart. All rights reserved.</div>
 </footer>
@@ -822,11 +596,7 @@ button,.cat-card,.gallery-item,.atab,.bnav-item{user-select:none;-webkit-user-se
       <select class="rselect" id="rProduct"></select>
       <label style="font-weight:600;font-size:.85rem;color:#555;">Rating</label>
       <div class="star-picker" id="starPicker">
-        <span onclick="setRevStar(1)">★</span>
-        <span onclick="setRevStar(2)">★</span>
-        <span onclick="setRevStar(3)">★</span>
-        <span onclick="setRevStar(4)">★</span>
-        <span onclick="setRevStar(5)">★</span>
+        <span onclick="setRevStar(1)">★</span><span onclick="setRevStar(2)">★</span><span onclick="setRevStar(3)">★</span><span onclick="setRevStar(4)">★</span><span onclick="setRevStar(5)">★</span>
       </div>
       <label style="font-weight:600;font-size:.85rem;color:#555;">Your Review</label>
       <textarea class="rtextarea" id="rText" placeholder="Share your experience..."></textarea>
@@ -877,39 +647,21 @@ button,.cat-card,.gallery-item,.atab,.bnav-item{user-select:none;-webkit-user-se
     <div class="fmodal-hdr"><h2 id="formTitle">Add New Product</h2><button class="close-btn" onclick="closeProductForm()">✕</button></div>
     <div class="fmodal-body">
       <input type="hidden" id="fId">
-      <div class="frow">
-        <div class="fgrp"><label>Product Name *</label><input id="fName" placeholder="e.g. Hero Sprint Pro 29T"></div>
-        <div class="fgrp"><label>Category *</label><select id="fCat"><option value="mountain">Mountain</option><option value="road">Road</option><option value="hybrid">Hybrid</option><option value="electric">Electric</option><option value="kids">Kids</option></select></div>
-      </div>
+      <div class="frow"><div class="fgrp"><label>Product Name *</label><input id="fName" placeholder="e.g. Trek Marlin 7 29T"></div><div class="fgrp"><label>Category *</label><select id="fCat"><option value="mountain">Mountain</option><option value="road">Road</option><option value="hybrid">Hybrid</option><option value="electric">Electric</option><option value="kids">Kids</option></select></div></div>
       <div class="frow full"><div class="fgrp"><label>Description</label><textarea id="fDesc" placeholder="Short description..."></textarea></div></div>
-      <div class="frow">
-        <div class="fgrp"><label>Price (₹) *</label><input id="fPrice" type="number" placeholder="e.g. 18999"></div>
-        <div class="fgrp"><label>Discount (%)</label><input id="fDiscount" type="number" min="0" max="90" placeholder="e.g. 10"></div>
-      </div>
-      <div class="frow">
-        <div class="fgrp"><label>Stock Quantity *</label><input id="fStock" type="number" placeholder="e.g. 15"></div>
-        <div class="fgrp"><label>Badge Label</label><input id="fBadge" placeholder="e.g. Bestseller, New, Hot"></div>
-      </div>
-      <div class="frow">
-        <div class="fgrp"><label>Spec 1</label><input id="fSpec1" placeholder='e.g. 29" wheels'></div>
-        <div class="fgrp"><label>Spec 2</label><input id="fSpec2" placeholder="e.g. 21-speed Shimano"></div>
-      </div>
-      <div class="frow">
-        <div class="fgrp"><label>Spec 3</label><input id="fSpec3" placeholder="e.g. Front suspension"></div>
-        <div class="fgrp"><label>Emoji Icon</label><input id="fIcon" placeholder="e.g. 🚵"></div>
-      </div>
+      <div class="frow"><div class="fgrp"><label>Price (₹) *</label><input id="fPrice" type="number" placeholder="e.g. 42999"></div><div class="fgrp"><label>Discount (%)</label><input id="fDiscount" type="number" min="0" max="90" placeholder="e.g. 10"></div></div>
+      <div class="frow"><div class="fgrp"><label>Stock Quantity *</label><input id="fStock" type="number" placeholder="e.g. 15"></div><div class="fgrp"><label>Badge Label</label><input id="fBadge" placeholder="e.g. Bestseller, New, Hot"></div></div>
+      <div class="frow"><div class="fgrp"><label>Spec 1</label><input id="fSpec1" placeholder='e.g. 29" wheels'></div><div class="fgrp"><label>Spec 2</label><input id="fSpec2" placeholder="e.g. Shimano Deore 2×10"></div></div>
+      <div class="frow"><div class="fgrp"><label>Spec 3</label><input id="fSpec3" placeholder="e.g. Hydraulic disc brakes"></div><div class="fgrp"><label>Emoji Icon</label><input id="fIcon" placeholder="e.g. 🚵"></div></div>
       <div class="frow full"><div class="fgrp"><label>Product Image URL</label><input id="fImg" placeholder="https://example.com/image.jpg" oninput="previewImg()"><div class="img-preview" id="imgPreview"><div class="img-placeholder">🖼️<br>Paste image URL above to preview</div></div></div></div>
     </div>
-    <div class="fmodal-foot">
-      <button class="btn-cancel" onclick="closeProductForm()">Cancel</button>
-      <button class="btn-save" onclick="saveProduct()">💾 Save Product</button>
-    </div>
+    <div class="fmodal-foot"><button class="btn-cancel" onclick="closeProductForm()">Cancel</button><button class="btn-save" onclick="saveProduct()">💾 Save Product</button></div>
   </div>
 </div>
 
 <div class="toast" id="toast"></div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 // ══════════════════════════════════════
 // SETTINGS
 // ══════════════════════════════════════
@@ -940,40 +692,48 @@ function applySettingsToPage(){
 }
 
 // ══════════════════════════════════════
-// PRODUCTS
+// REAL CYCLE PRODUCTS — 20 Models
 // ══════════════════════════════════════
 var DEFAULT_PRODUCTS=[
-  {id:1,name:"Hero Sprint Pro 29T",category:"mountain",price:18999,discount:0,stock:12,icon:"🚵",description:"21-speed mountain bike with front suspension for off-road adventures",specs:['29" wheels','21-speed Shimano','Front suspension'],badge:"Bestseller",image:""},
-  {id:2,name:"Firefox Rapide 700C",category:"road",price:24999,discount:10,stock:8,icon:"🚴",description:"Lightweight road bike with carbon fork for speed enthusiasts",specs:['700c wheels','14-speed','Carbon fork'],badge:"New",image:""},
-  {id:3,name:"Hero Lectro C5i",category:"electric",price:32999,discount:5,stock:5,icon:"⚡",description:"Electric cycle with lithium-ion battery and 25km range",specs:['250W motor','36V battery','25km range'],badge:"Hot",image:""},
-  {id:4,name:"Montra Blues 1.1",category:"hybrid",price:15999,discount:0,stock:20,icon:"🚲",description:"Perfect hybrid bike for city commuting and weekend rides",specs:['700c wheels','7-speed','Comfort saddle'],badge:"",image:""},
-  {id:5,name:"Giant Talon 29er",category:"mountain",price:42999,discount:8,stock:4,icon:"🚵",description:"Premium mountain bike with hydraulic disc brakes",specs:['29" wheels','24-speed','Hydraulic disc'],badge:"Premium",image:""},
-  {id:6,name:"Trek Domane AL 2",category:"road",price:54999,discount:0,stock:3,icon:"🚴",description:"Endurance road bike with aluminum frame for long rides",specs:['700c wheels','16-speed','Aluminum frame'],badge:"",image:""},
-  {id:7,name:"Hero Lectro F2",category:"electric",price:28999,discount:12,stock:7,icon:"⚡",description:"Foldable electric bike perfect for urban commuters",specs:['250W motor','Foldable','30km range'],badge:"Smart",image:""},
-  {id:8,name:"Firefox Bike Viper",category:"kids",price:7999,discount:0,stock:18,icon:"🧒",description:"Safe and sturdy bike for kids aged 5-8 years",specs:['20" wheels','Single speed','Training wheels'],badge:"Safe",image:""},
-  {id:9,name:"Btwin Rockrider ST 100",category:"mountain",price:21999,discount:0,stock:10,icon:"🚵",description:"Value mountain bike with 21-speed gears for trails",specs:['27.5" wheels','21-speed','V-brakes'],badge:"",image:""},
-  {id:10,name:"Hercules Top Gear A75",category:"hybrid",price:12999,discount:15,stock:25,icon:"🚲",description:"Reliable hybrid cycle for daily city commuting",specs:['26" wheels','7-speed','Steel frame'],badge:"",image:""},
-  {id:11,name:"EMotorad X3",category:"electric",price:45999,discount:0,stock:6,icon:"⚡",description:"Fat tire electric bike with 50km range",specs:['500W motor','Fat tires','50km range'],badge:"Bestseller",image:""},
-  {id:12,name:"Hero Disney Princess",category:"kids",price:6999,discount:5,stock:15,icon:"🧒",description:"Colorful bike for young girls with safety features",specs:['16" wheels','Single speed','Basket included'],badge:"",image:""},
-  {id:13,name:"Cannondale Quick 4",category:"hybrid",price:38999,discount:0,stock:2,icon:"🚲",description:"Premium hybrid with disc brakes and smooth ride",specs:['700c wheels','9-speed','Disc brakes'],badge:"Premium",image:""},
-  {id:14,name:"Scott Speedster 40",category:"road",price:62999,discount:7,stock:3,icon:"🚴",description:"Professional racing bike with Shimano components",specs:['700c wheels','20-speed','Carbon fork'],badge:"New",image:""},
-  {id:15,name:"Tata Stryder MTB",category:"mountain",price:16999,discount:0,stock:9,icon:"🚵",description:"Durable mountain bike for Indian terrain",specs:['26" wheels','18-speed','Front suspension'],badge:"",image:""},
-  {id:16,name:"BSA Ladybird Champ",category:"kids",price:5499,discount:0,stock:22,icon:"🧒",description:"Entry-level bike for beginners aged 3-5 years",specs:['14" wheels','Single speed','Safety pads'],badge:"Budget",image:""},
-  {id:17,name:"Hero Lectro Kinza",category:"electric",price:36999,discount:10,stock:8,icon:"⚡",description:"Stylish electric bike with removable battery",specs:['350W motor','Removable battery','40km range'],badge:"",image:""},
-  {id:18,name:"Firefox Road Runner",category:"road",price:19999,discount:0,stock:11,icon:"🚴",description:"Affordable road bike for fitness enthusiasts",specs:['700c wheels','14-speed','Lightweight'],badge:"Value",image:""}
+  // ─── MOUNTAIN BIKES ─────────────────────────────────────
+  {id:1,name:"Trek Marlin 7 29T",category:"mountain",price:42999,discount:8,stock:7,icon:"🚵",badge:"Bestseller",description:"Trail-ready hardtail with RockShox fork and hydraulic disc brakes. A go-to MTB for serious riders.",specs:['29" wheels','RockShox Judy fork','Shimano Deore 2×10','Hydraulic disc'],image:"https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?w=800&q=80"},
+  {id:2,name:"Giant Talon 3 27.5",category:"mountain",price:28999,discount:5,stock:10,icon:"🚵",badge:"Popular",description:"A versatile and capable hardtail MTB with ALUXX-grade aluminum frame — brilliant value for the price.",specs:['27.5" wheels','SR Suntour XCT fork','Shimano 3×8 speed','Mechanical disc brakes'],image:"https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=800&q=80"},
+  {id:3,name:"Scott Aspect 950",category:"mountain",price:23999,discount:0,stock:9,icon:"🚵",badge:"",description:"Smart geometry, reliable gearing and front suspension make the Aspect 950 a solid entry-point to trail riding.",specs:['29" wheels','SR Suntour XCE fork','Shimano 3×7 speed','V-brakes'],image:"https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?w=800&q=80"},
+  {id:4,name:"Cannondale Trail 8",category:"mountain",price:34999,discount:10,stock:5,icon:"🚵",badge:"New Arrival",description:"Lightweight SmartForm C3 alloy frame with aggressive geometry built for flowy singletrack.",specs:['27.5" wheels','SR Suntour XCT fork','Shimano Altus 3×8','Tektro HD-M275 disc'],image:"https://images.unsplash.com/photo-1571168826789-a5f7e3b30432?w=800&q=80"},
+  // ─── ROAD BIKES ─────────────────────────────────────────
+  {id:5,name:"Giant Contend 3 700C",category:"road",price:31999,discount:0,stock:8,icon:"🚴",badge:"Lightweight",description:"Endurance road geometry with ALUXX aluminum frame. Smooth ride on tarmac at every speed.",specs:['700c wheels','Shimano Claris 2×8','Giant S-X2 fork','Tektro calipers'],image:"https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=800&q=80"},
+  {id:6,name:"Trek Domane AL 2",category:"road",price:54999,discount:7,stock:4,icon:"🚴",badge:"Premium",description:"Endurance racing legend. Isospeed decoupler absorbs road chatter for comfort on long days in the saddle.",specs:['700c wheels','Shimano Sora 2×9','Bontrager Approved fork','Hydraulic disc'],image:"https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=800&q=80"},
+  {id:7,name:"Firefox Road Runner Pro",category:"road",price:19999,discount:0,stock:12,icon:"🚴",badge:"Value Pick",description:"Affordable and agile road bike built for fitness rides and weekend warriors on Indian highways.",specs:['700c wheels','Shimano 7-speed','Alloy fork','Caliper brakes'],image:"https://images.unsplash.com/photo-1560073743-0ba4b6a1ac36?w=800&q=80"},
+  {id:8,name:"Scott Speedster 50",category:"road",price:62999,discount:5,stock:3,icon:"🚴",badge:"Race Ready",description:"A performance road machine with 700C alloy frame, carbon fork and Shimano Tiagra groupset.",specs:['700c wheels','Shimano Tiagra 2×10','Carbon HMF fork','Rim brakes'],image:"https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800&q=80"},
+  // ─── ELECTRIC BIKES ─────────────────────────────────────
+  {id:9,name:"Hero Lectro C5i Elite",category:"electric",price:32999,discount:8,stock:6,icon:"⚡",badge:"Bestseller",description:"India's most popular e-cycle. 36V lithium-ion battery, pedal assist up to 25 km/h, charges in 3 hours.",specs:['250W BLDC motor','36V / 7.8Ah battery','25–30 km range','Disc brakes'],image:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"},
+  {id:10,name:"EMotorad X3 Fat Tyre",category:"electric",price:46999,discount:5,stock:5,icon:"⚡",badge:"Adventure",description:"Fat-tyre electric adventure bike with 500W motor, torque sensor and 45 km range on a single charge.",specs:['500W motor','48V / 10.4Ah battery','45 km range','4" fat tyres'],image:"https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=800&q=80"},
+  {id:11,name:"Tata Stryder Torq E",category:"electric",price:38999,discount:0,stock:7,icon:"⚡",badge:"Smart",description:"Smart connected e-cycle with app connectivity, anti-theft alarm and 35 km assisted range.",specs:['350W motor','36V battery','Bluetooth app','35 km range'],image:"https://images.unsplash.com/photo-1622385644843-e20ae756e9b0?w=800&q=80"},
+  {id:12,name:"Hero Lectro Foldie 20T",category:"electric",price:29999,discount:12,stock:8,icon:"⚡",badge:"Foldable",description:"Compact foldable e-cycle for urban last-mile commuting. Fits in car boots and lifts into apartments.",specs:['250W motor','Foldable frame','30 km range','Removable battery'],image:"https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?w=800&q=80"},
+  // ─── HYBRID / CITY BIKES ────────────────────────────────
+  {id:13,name:"Trek FX 3 Disc 700C",category:"hybrid",price:47999,discount:0,stock:5,icon:"🚲",badge:"Editor's Choice",description:"Premium fitness hybrid with Shimano Deore, hydraulic discs, and feather-light Alpha Silver Aluminum frame.",specs:['700c wheels','Shimano Deore 2×10','Bontrager Affinity fork','Hydraulic disc'],image:"https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=800&q=80"},
+  {id:14,name:"Giant Escape 3 700C",category:"hybrid",price:24999,discount:0,stock:14,icon:"🚲",badge:"Commuter Pick",description:"Smooth and nimble city hybrid with upright geometry, perfect for daily commutes and casual weekend rides.",specs:['700c wheels','Shimano Tourney 3×7','SR Suntour fork','V-brakes'],image:"https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?w=800&q=80"},
+  {id:15,name:"Firefox Dart 700C",category:"hybrid",price:16999,discount:10,stock:18,icon:"🚲",badge:"",description:"Budget-friendly hybrid that punches above its weight. Great daily rider with reliable brakes and smooth gearing.",specs:['700c wheels','Shimano 21-speed','Linear pull brakes','Alloy rims'],image:"https://images.unsplash.com/photo-1571168826789-a5f7e3b30432?w=800&q=80"},
+  {id:16,name:"Hercules Roadeo Turner",category:"hybrid",price:12999,discount:0,stock:22,icon:"🚲",badge:"Budget King",description:"Reliable Indian-made hybrid for daily commuting. Strong steel frame, easy to maintain, comfortable saddle.",specs:['26" wheels','21-speed gears','Steel frame','V-brakes'],image:"https://images.unsplash.com/photo-1560073743-0ba4b6a1ac36?w=800&q=80"},
+  // ─── KIDS BIKES ─────────────────────────────────────────
+  {id:17,name:"Trek Precaliber 20T",category:"kids",price:14999,discount:5,stock:15,icon:"🧒",badge:"Top Rated",description:"Built specifically for growing riders (ages 6–9). Easy-to-use brakes, lightweight alloy frame.",specs:['20" wheels','6-speed gears','ALUXX alloy frame','Linear pull brakes'],image:"https://images.unsplash.com/photo-1622385644843-e20ae756e9b0?w=800&q=80"},
+  {id:18,name:"Firefox Dragon 20T",category:"kids",price:8999,discount:0,stock:20,icon:"🧒",badge:"Fun Design",description:"Vibrant graphics and safe geometry for kids aged 5–8. Comes with training wheels and wide comfort grips.",specs:['20" wheels','Single speed','Training wheels included','Safety pads'],image:"https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?w=800&q=80"},
+  {id:19,name:"BSA Ladybird Champ 16T",category:"kids",price:5999,discount:0,stock:25,icon:"🧒",badge:"Starter",description:"Classic first bike for toddlers aged 3–5. Bright colours, sturdy steel frame and easy-reach brakes.",specs:['16" wheels','Single speed','Steel frame','Coaster + hand brake'],image:"https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=800&q=80"},
+  {id:20,name:"Hero Blast 24T Junior",category:"kids",price:9999,discount:8,stock:12,icon:"🧒",badge:"Junior Pro",description:"Perfect transition bike for older kids (ages 9–12). 21-speed gearing, front suspension and disc brakes.",specs:['24" wheels','21-speed gears','Front suspension','Disc brakes'],image:"https://images.unsplash.com/photo-1622385644843-e20ae756e9b0?w=800&q=80"}
 ];
+
 var products=JSON.parse(localStorage.getItem('pcm_products')||'null')||DEFAULT_PRODUCTS;
 
 // ══════════════════════════════════════
 // REVIEWS
 // ══════════════════════════════════════
 var DEFAULT_REVIEWS=[
-  {id:1,name:"Arjun M.",product:"Hero Sprint Pro 29T",rating:5,text:"Absolutely love this bike! The suspension handles rocky trails perfectly. Best purchase of the year.",date:"2026-01-15",color:"#667eea"},
-  {id:2,name:"Priya S.",product:"Hero Lectro C5i",rating:5,text:"The electric assist is game-changing for my daily commute. Charges overnight, lasts the whole day. Zero regrets!",date:"2026-01-28",color:"#f46b45"},
-  {id:3,name:"Ravi K.",product:"Firefox Rapide 700C",rating:4,text:"Incredibly fast and lightweight. The carbon fork absorbs road vibrations beautifully. Delivery was prompt too.",date:"2026-02-03",color:"#11998e"},
-  {id:4,name:"Meena T.",product:"Montra Blues 1.1",rating:5,text:"Perfect city bike! Comfortable saddle, smooth gears. I use it daily for office commute and Sunday rides.",date:"2026-02-10",color:"#f953c6"},
-  {id:5,name:"Karthik R.",product:"Giant Talon 29er",rating:5,text:"Worth every rupee. The hydraulic disc brakes give so much confidence on steep descents. Top-notch quality.",date:"2026-02-14",color:"#764ba2"},
-  {id:6,name:"Sunita D.",product:"Firefox Bike Viper",rating:4,text:"My daughter loves her new bike! Very sturdy with good safety features. Looks great too. Highly recommend.",date:"2026-02-16",color:"#0f9b8e"}
+  {id:1,name:"Arjun M.",product:"Trek Marlin 7 29T",rating:5,text:"Absolutely love this bike! The RockShox fork handles rocky trails perfectly. Worth every rupee.",date:"2026-01-15",color:"#667eea"},
+  {id:2,name:"Priya S.",product:"Hero Lectro C5i Elite",rating:5,text:"The electric assist is game-changing for my daily commute. Charges overnight, lasts the whole day. Zero regrets!",date:"2026-01-28",color:"#f46b45"},
+  {id:3,name:"Ravi K.",product:"Trek Domane AL 2",rating:4,text:"Incredibly smooth and lightweight. The Isospeed decoupler is real — long rides feel effortless. Delivery was prompt.",date:"2026-02-03",color:"#11998e"},
+  {id:4,name:"Meena T.",product:"Giant Escape 3 700C",rating:5,text:"Perfect city bike! Comfortable saddle, smooth gears. I use it daily for office commute and Sunday rides.",date:"2026-02-10",color:"#f953c6"},
+  {id:5,name:"Karthik R.",product:"EMotorad X3 Fat Tyre",rating:5,text:"Worth every rupee. The fat tyres give so much confidence on rough roads. Top-notch quality from EMotorad.",date:"2026-02-14",color:"#764ba2"},
+  {id:6,name:"Sunita D.",product:"Trek Precaliber 20T",rating:4,text:"My son loves his new Trek! Very sturdy with good safety features. He was riding solo within a day. Highly recommend.",date:"2026-02-16",color:"#0f9b8e"}
 ];
 var reviews=JSON.parse(localStorage.getItem('pcm_reviews')||'null')||DEFAULT_REVIEWS;
 function saveReviews(){localStorage.setItem('pcm_reviews',JSON.stringify(reviews));}
@@ -1030,7 +790,7 @@ function changeQty(id,delta){
   var ci=null;for(var i=0;i<cart.length;i++){if(cart[i].id===id){ci=cart[i];break;}}
   if(!ci) return;
   ci.qty+=delta;
-  if(ci.qty<=0) cart=cart.filter(function(x){return x.id!==id;});
+  if(ci.qty<=0)cart=cart.filter(function(x){return x.id!==id;});
   else if(ci.qty>p.stock){ci.qty=p.stock;showToast('Max stock!','warn');}
   updateCartBadge();renderCartItems();
 }
@@ -1076,26 +836,21 @@ function removeFromWishlist(id){
 // ══════════════════════════════════════
 // SEARCH
 // ══════════════════════════════════════
-var currentSearch='';
-var currentCat='all';
+var currentSearch='';var currentCat='all';
 function onHeroSearch(val){
   currentSearch=val.trim().toLowerCase();
   document.getElementById('searchClearBtn').className='search-clear'+(currentSearch?' visible':'');
   renderShop();
-  if(currentSearch){
-    document.getElementById('products').scrollIntoView({behavior:'smooth'});
-  }
+  if(currentSearch)document.getElementById('products').scrollIntoView({behavior:'smooth'});
 }
 function clearSearch(){
-  currentSearch='';
-  document.getElementById('heroSearch').value='';
+  currentSearch='';document.getElementById('heroSearch').value='';
   document.getElementById('searchClearBtn').className='search-clear';
-  document.getElementById('searchResultsInfo').textContent='';
-  renderShop();
+  document.getElementById('searchResultsInfo').textContent='';renderShop();
 }
 
 // ══════════════════════════════════════
-// STARS HELPER
+// STARS
 // ══════════════════════════════════════
 function getAvgRating(productName){
   var rev=reviews.filter(function(r){return r.product===productName;});
@@ -1116,74 +871,48 @@ function renderShop(filter){
   if(filter!==undefined) currentCat=filter;
   var sort=document.getElementById('sortSelect')?document.getElementById('sortSelect').value:'default';
   var list=currentCat==='all'?products.slice():products.filter(function(p){return p.category===currentCat;});
-  // search filter
-  if(currentSearch){
-    list=list.filter(function(p){
-      return p.name.toLowerCase().indexOf(currentSearch)>=0||
-        p.category.toLowerCase().indexOf(currentSearch)>=0||
-        (p.description&&p.description.toLowerCase().indexOf(currentSearch)>=0)||
-        (p.badge&&p.badge.toLowerCase().indexOf(currentSearch)>=0);
-    });
-  }
-  // sort
-  if(sort==='price-asc') list.sort(function(a,b){return fp(a)-fp(b);});
-  else if(sort==='price-desc') list.sort(function(a,b){return fp(b)-fp(a);});
-  else if(sort==='discount') list.sort(function(a,b){return (b.discount||0)-(a.discount||0);});
-  else if(sort==='name') list.sort(function(a,b){return a.name.localeCompare(b.name);});
-  else if(sort==='rating') list.sort(function(a,b){return getAvgRating(b.name).avg-getAvgRating(a.name).avg;});
-
-  // results info
+  if(currentSearch){list=list.filter(function(p){return p.name.toLowerCase().indexOf(currentSearch)>=0||p.category.toLowerCase().indexOf(currentSearch)>=0||(p.description&&p.description.toLowerCase().indexOf(currentSearch)>=0)||(p.badge&&p.badge.toLowerCase().indexOf(currentSearch)>=0);});}
+  if(sort==='price-asc')list.sort(function(a,b){return fp(a)-fp(b);});
+  else if(sort==='price-desc')list.sort(function(a,b){return fp(b)-fp(a);});
+  else if(sort==='discount')list.sort(function(a,b){return (b.discount||0)-(a.discount||0);});
+  else if(sort==='name')list.sort(function(a,b){return a.name.localeCompare(b.name);});
+  else if(sort==='rating')list.sort(function(a,b){return getAvgRating(b.name).avg-getAvgRating(a.name).avg;});
   var info='';
-  if(currentSearch) info='Showing '+list.length+' result'+(list.length!==1?'s':'')+" for '"+currentSearch+"'";
-  else if(currentCat!=='all') info='Showing '+list.length+' '+currentCat+' bike'+(list.length!==1?'s':'');
+  if(currentSearch)info='Showing '+list.length+' result'+(list.length!==1?'s':'')+" for '"+currentSearch+"'";
+  else if(currentCat!=='all')info='Showing '+list.length+' '+currentCat+' bike'+(list.length!==1?'s':'');
   else info='Showing all '+list.length+' bikes';
-  var ri=document.getElementById('resultsInfo');if(ri) ri.textContent=info;
-  if(currentSearch){
-    var sri=document.getElementById('searchResultsInfo');
-    if(sri) sri.textContent=list.length+' bike'+(list.length!==1?'s':'')+' found';
-  }
-
+  var ri=document.getElementById('resultsInfo');if(ri)ri.textContent=info;
+  if(currentSearch){var sri=document.getElementById('searchResultsInfo');if(sri)sri.textContent=list.length+' bike'+(list.length!==1?'s':'')+' found';}
   var grid=document.getElementById('shopGrid');
-  if(!list.length){
-    grid.innerHTML='<div class="no-results" style="grid-column:1/-1"><div class="nr-icon">🔍</div><h3>No bikes found</h3><p style="color:#bbb;">Try a different search or category.</p></div>';
-    return;
-  }
+  if(!list.length){grid.innerHTML='<div class="no-results" style="grid-column:1/-1"><div class="nr-icon">🔍</div><h3>No bikes found</h3><p style="color:#bbb;">Try a different search or category.</p></div>';return;}
   var html='';
   for(var i=0;i<list.length;i++){
     var p=list[i],price=fp(p),hasDisc=p.discount>0,oos=p.stock<=0;
-    var wished=isWished(p.id);
-    var rating=getAvgRating(p.name);
+    var wished=isWished(p.id);var rating=getAvgRating(p.name);
     html+='<div class="pcard"><div class="pimg">';
-    if(p.image){html+='<img src="'+p.image+'" alt="'+p.name+'" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">';
-      html+='<div class="emoji-placeholder" style="display:none;">'+(p.icon||'🚲')+'</div>';}
+    if(p.image){html+='<img src="'+p.image+'" alt="'+p.name+'" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">';html+='<div class="emoji-placeholder" style="display:none;">'+(p.icon||'🚲')+'</div>';}
     else html+='<div class="emoji-placeholder">'+(p.icon||'🚲')+'</div>';
-    if(hasDisc) html+='<div class="disc-badge">-'+p.discount+'%</div>';
-    if(oos) html+='<div class="out-badge">Out of Stock</div>';
-    // heart / badge: badge moved to top-right, heart overlaps when no badge
+    if(hasDisc)html+='<div class="disc-badge">-'+p.discount+'%</div>';
+    if(oos)html+='<div class="out-badge">Out of Stock</div>';
     html+='<button class="wish-btn'+(wished?' wished':'')+'" onclick="toggleWish('+p.id+')" title="'+(wished?'Remove from':'Add to')+' Wishlist">'+(wished?'❤️':'🤍')+'</button>';
-    if(p.badge) html+='<div class="pbadge" style="right:52px;">'+p.badge+'</div>';
+    if(p.badge)html+='<div class="pbadge" style="right:52px;">'+p.badge+'</div>';
     html+='</div><div class="pinfo"><div class="pcat">'+p.category+'</div><h3 class="pname">'+p.name+'</h3>';
-    // star rating
-    if(rating.count>0){
-      html+='<div class="star-row">'+renderStars(rating.avg)+'<span class="review-count">('+rating.count+')</span></div>';
-    } else {
-      html+='<div class="star-row"><span style="color:#eee;font-size:.88rem;">★★★★★</span><span class="review-count" style="color:#ddd;">No reviews yet</span></div>';
-    }
+    if(rating.count>0){html+='<div class="star-row">'+renderStars(rating.avg)+'<span class="review-count">('+rating.count+')</span></div>';}
+    else{html+='<div class="star-row"><span style="color:#eee;font-size:.88rem;">★★★★★</span><span class="review-count" style="color:#ddd;">No reviews yet</span></div>';}
     html+='<p class="pdesc">'+p.description+'</p><div class="pspecs">';
-    var sp=p.specs||[];for(var s=0;s<sp.length;s++) html+='<span class="spec">⚙️ '+sp[s]+'</span>';
+    var sp=p.specs||[];for(var s=0;s<sp.length;s++)html+='<span class="spec">⚙️ '+sp[s]+'</span>';
     html+='</div><div class="pfoot"><div class="price-block">';
-    if(hasDisc) html+='<div class="orig">₹'+p.price.toLocaleString()+'</div>';
+    if(hasDisc)html+='<div class="orig">₹'+p.price.toLocaleString()+'</div>';
     html+='<div class="final">₹'+price.toLocaleString()+'</div>';
-    if(hasDisc) html+='<div class="saving">Save ₹'+(p.price-price).toLocaleString()+'</div>';
+    if(hasDisc)html+='<div class="saving">Save ₹'+(p.price-price).toLocaleString()+'</div>';
     html+='</div><button class="atc" onclick="addToCart('+p.id+')" '+(oos?'disabled':'')+'>'+(oos?'Out of Stock':'Add to Cart')+'</button></div></div></div>';
   }
   grid.innerHTML=html;
 }
 function filterCat(cat,btn){
   var btns=document.querySelectorAll('.fbtn');
-  for(var i=0;i<btns.length;i++) btns[i].classList.remove('active');
-  btn.classList.add('active');
-  currentCat=cat;renderShop();
+  for(var i=0;i<btns.length;i++)btns[i].classList.remove('active');
+  btn.classList.add('active');currentCat=cat;renderShop();
 }
 
 // ══════════════════════════════════════
@@ -1193,11 +922,10 @@ var revStar=0;
 function renderReviews(){
   var grid=document.getElementById('reviewsGrid');
   if(!reviews.length){grid.innerHTML='<p style="color:#aaa;text-align:center;padding:2rem;">No reviews yet. Be the first!</p>';return;}
-  var html='';
-  var avatarColors=['#667eea','#f46b45','#11998e','#f953c6','#764ba2','#0f9b8e','#f39c12','#c0392b'];
+  var html='';var avatarColors=['#667eea','#f46b45','#11998e','#f953c6','#764ba2','#0f9b8e','#f39c12','#c0392b'];
   for(var i=0;i<reviews.length;i++){
     var r=reviews[i],stars='';
-    for(var s=1;s<=5;s++) stars+='<span style="color:'+(s<=r.rating?'#f39c12':'#ddd')+';">★</span>';
+    for(var s=1;s<=5;s++)stars+='<span style="color:'+(s<=r.rating?'#f39c12':'#ddd')+';">★</span>';
     var col=r.color||avatarColors[i%avatarColors.length];
     html+='<div class="rcard"><div class="rhead"><div class="ravatar" style="background:'+col+';">'+r.name.charAt(0)+'</div><div><div class="rname">'+r.name+'</div><div class="rproduct">'+r.product+'</div></div><div style="margin-left:auto;font-size:.88rem;">'+stars+'</div></div><p class="rtext">'+r.text+'</p><p class="rdate">'+r.date+'</p></div>';
   }
@@ -1206,20 +934,14 @@ function renderReviews(){
 function openReviewModal(){
   var sel=document.getElementById('rProduct');sel.innerHTML='';
   for(var i=0;i<products.length;i++){var o=document.createElement('option');o.value=products[i].name;o.textContent=products[i].name;sel.appendChild(o);}
-  revStar=0;updateStarPicker();
-  document.getElementById('rName').value='';document.getElementById('rText').value='';
+  revStar=0;updateStarPicker();document.getElementById('rName').value='';document.getElementById('rText').value='';
   document.getElementById('reviewModal').classList.add('open');
 }
 function closeReviewModal(){document.getElementById('reviewModal').classList.remove('open');}
 function setRevStar(n){revStar=n;updateStarPicker();}
-function updateStarPicker(){
-  var spans=document.querySelectorAll('#starPicker span');
-  for(var i=0;i<spans.length;i++) spans[i].className=i<revStar?'active':'';
-}
+function updateStarPicker(){var spans=document.querySelectorAll('#starPicker span');for(var i=0;i<spans.length;i++)spans[i].className=i<revStar?'active':'';}
 function submitReview(){
-  var name=document.getElementById('rName').value.trim();
-  var product=document.getElementById('rProduct').value;
-  var text=document.getElementById('rText').value.trim();
+  var name=document.getElementById('rName').value.trim();var product=document.getElementById('rProduct').value;var text=document.getElementById('rText').value.trim();
   if(!name||!revStar||!text){showToast('⚠️ Please fill all fields and select a rating!','warn');return;}
   var colors=['#667eea','#f46b45','#11998e','#f953c6','#764ba2','#0f9b8e','#f39c12','#c0392b'];
   var today=new Date();var d=today.getFullYear()+'-'+String(today.getMonth()+1).padStart(2,'0')+'-'+String(today.getDate()).padStart(2,'0');
@@ -1244,23 +966,22 @@ function adminLogout(){document.getElementById('adminPanel').classList.remove('o
 // ADMIN TABS
 // ══════════════════════════════════════
 function showTab(tab,el){
-  var tabs=document.querySelectorAll('.atab');for(var i=0;i<tabs.length;i++) tabs[i].classList.remove('active');
-  if(el) el.classList.add('active');
+  var tabs=document.querySelectorAll('.atab');for(var i=0;i<tabs.length;i++)tabs[i].classList.remove('active');
+  if(el)el.classList.add('active');
   var names=['dashboard','products','stock','discounts','reviews','settings'];
-  for(var i=0;i<names.length;i++) document.getElementById('tab-'+names[i]).style.display=names[i]===tab?'block':'none';
-  if(tab==='dashboard') renderDashboard();
-  if(tab==='products') renderProductsTab('');
-  if(tab==='stock') renderStockTab();
-  if(tab==='discounts') renderDiscountsTab();
-  if(tab==='reviews') renderAdminReviews();
-  if(tab==='settings') renderSettingsTab();
+  for(var i=0;i<names.length;i++)document.getElementById('tab-'+names[i]).style.display=names[i]===tab?'block':'none';
+  if(tab==='dashboard')renderDashboard();
+  if(tab==='products')renderProductsTab('');
+  if(tab==='stock')renderStockTab();
+  if(tab==='discounts')renderDiscountsTab();
+  if(tab==='reviews')renderAdminReviews();
+  if(tab==='settings')renderSettingsTab();
 }
-
 function renderDashboard(){
   var totalVal=0,oos=0,low=0,disc=0,units=0;
   for(var i=0;i<products.length;i++){var p=products[i];totalVal+=fp(p)*p.stock;if(p.stock===0)oos++;else if(p.stock<=5)low++;if(p.discount>0)disc++;units+=p.stock;}
   var rows='';
-  for(var i=0;i<Math.min(products.length,8);i++){var p=products[i];var cls=p.stock===0?'out-stock':p.stock<=5?'low-stock':'in-stock';var lbl=p.stock===0?'Out of Stock':p.stock<=5?'Low Stock':'In Stock';rows+='<tr><td><b>'+p.name+'</b></td><td style="text-transform:capitalize;">'+p.category+'</td><td>₹'+fp(p).toLocaleString()+'</td><td>'+p.stock+'</td><td><span class="stock-badge '+cls+'">'+lbl+'</span></td></tr>';}
+  for(var i=0;i<Math.min(products.length,10);i++){var p=products[i];var cls=p.stock===0?'out-stock':p.stock<=5?'low-stock':'in-stock';var lbl=p.stock===0?'Out of Stock':p.stock<=5?'Low Stock':'In Stock';rows+='<tr><td><b>'+p.name+'</b></td><td style="text-transform:capitalize;">'+p.category+'</td><td>₹'+fp(p).toLocaleString()+'</td><td>'+p.stock+'</td><td><span class="stock-badge '+cls+'">'+lbl+'</span></td></tr>';}
   document.getElementById('tab-dashboard').innerHTML='<h2 style="color:#2c3e50;margin-bottom:1.5rem;font-family:var(--display);">📊 Dashboard Overview</h2>'+
     '<div class="dash-cards">'+
     '<div class="dcard"><div class="dcard-icon" style="background:#e8f4fd;">📦</div><div class="dcard-info"><h3>'+products.length+'</h3><p>Total Products</p></div></div>'+
@@ -1271,7 +992,6 @@ function renderDashboard(){
     '<div class="dcard"><div class="dcard-icon" style="background:#fdf0e8;">⭐</div><div class="dcard-info"><h3>'+reviews.length+'</h3><p>Total Reviews</p></div></div></div>'+
     '<div class="table-wrap"><table><thead><tr><th>Product</th><th>Category</th><th>Price</th><th>Stock</th><th>Status</th></tr></thead><tbody>'+rows+'</tbody></table></div>';
 }
-
 function renderProductsTab(filter){
   var list=products;
   if(filter){var f=filter.toLowerCase();list=products.filter(function(p){return p.name.toLowerCase().indexOf(f)>=0||p.category.indexOf(f)>=0;});}
@@ -1292,7 +1012,6 @@ function renderProductsTab(filter){
     '<button class="btn-add" onclick="openProductForm(null)">+ Add Product</button></div></div>'+
     '<div class="table-wrap"><table><thead><tr><th>Image</th><th>Name</th><th>Category</th><th>Price</th><th>Disc</th><th>Final</th><th>Stock</th><th>Rating</th><th>Actions</th></tr></thead><tbody>'+rows+'</tbody></table></div>';
 }
-
 function renderStockTab(){
   var rows='';
   for(var i=0;i<products.length;i++){var p=products[i];var cls=p.stock===0?'out-stock':p.stock<=5?'low-stock':'in-stock';var lbl=p.stock===0?'Out of Stock':p.stock<=5?'Low Stock':'In Stock';
@@ -1305,7 +1024,6 @@ function renderStockTab(){
   document.getElementById('tab-stock').innerHTML='<div class="section-hdr"><h2>📦 Stock Management</h2></div>'+
     '<div class="table-wrap"><table><thead><tr><th>Product</th><th>Category</th><th>Current Stock</th><th>Status</th><th>Update</th></tr></thead><tbody>'+rows+'</tbody></table></div>';
 }
-
 function renderDiscountsTab(){
   var rows='';
   for(var i=0;i<products.length;i++){var p=products[i];var price=fp(p),saving=p.price-price;
@@ -1319,13 +1037,11 @@ function renderDiscountsTab(){
   document.getElementById('tab-discounts').innerHTML='<div class="section-hdr"><h2>🏷️ Discount Management</h2></div>'+
     '<div class="table-wrap"><table><thead><tr><th>Product</th><th>Category</th><th>Original</th><th>Discount %</th><th>Final</th><th>Saves</th><th>Action</th></tr></thead><tbody>'+rows+'</tbody></table></div>';
 }
-
 function renderAdminReviews(){
   var rows='';
-  var avatarColors=['#667eea','#f46b45','#11998e','#f953c6','#764ba2','#0f9b8e'];
   for(var i=0;i<reviews.length;i++){
     var r=reviews[i];var stars='';
-    for(var s=1;s<=5;s++) stars+='<span style="color:'+(s<=r.rating?'#f39c12':'#ddd')+';">★</span>';
+    for(var s=1;s<=5;s++)stars+='<span style="color:'+(s<=r.rating?'#f39c12':'#ddd')+';">★</span>';
     rows+='<tr><td><b>'+r.name+'</b></td><td>'+r.product+'</td><td>'+stars+'</td>'+
     '<td style="max-width:260px;word-wrap:break-word;">'+r.text+'</td><td>'+r.date+'</td>'+
     '<td><button class="act-btn btn-del" onclick="deleteReview('+r.id+')">🗑️ Del</button></td></tr>';
@@ -1334,11 +1050,10 @@ function renderAdminReviews(){
     '<div class="table-wrap"><table><thead><tr><th>Reviewer</th><th>Product</th><th>Rating</th><th>Review</th><th>Date</th><th>Action</th></tr></thead><tbody>'+rows+'</tbody></table></div>';
 }
 function deleteReview(id){
-  if(!confirm('Delete this review?')) return;
+  if(!confirm('Delete this review?'))return;
   reviews=reviews.filter(function(x){return x.id!==id;});
   saveReviews();renderAdminReviews();renderReviews();renderShop();showToast('Review deleted.');
 }
-
 function renderSettingsTab(){
   var s=siteSettings;
   var presets='';
@@ -1423,7 +1138,7 @@ function openProductForm(id){
     document.getElementById('fImg').value=p.image||'';previewImg();
   } else {
     var ids=['fId','fName','fDesc','fPrice','fDiscount','fStock','fBadge','fSpec1','fSpec2','fSpec3','fIcon','fImg'];
-    for(var i=0;i<ids.length;i++) document.getElementById(ids[i]).value='';
+    for(var i=0;i<ids.length;i++)document.getElementById(ids[i]).value='';
     document.getElementById('fCat').value='mountain';
     document.getElementById('imgPreview').innerHTML='<div class="img-placeholder">🖼️<br>Paste image URL above to preview</div>';
   }
@@ -1432,16 +1147,16 @@ function openProductForm(id){
 function closeProductForm(){document.getElementById('productFormModal').classList.remove('open');}
 function previewImg(){
   var url=document.getElementById('fImg').value.trim();var prev=document.getElementById('imgPreview');
-  if(url) prev.innerHTML='<img src="'+url+'" style="max-width:100%;max-height:116px;object-fit:contain;" onerror="this.parentElement.innerHTML=\'<div class=\\\'img-placeholder\\\'>❌ Invalid URL</div>\'">';
+  if(url)prev.innerHTML='<img src="'+url+'" style="max-width:100%;max-height:116px;object-fit:contain;" onerror="this.parentElement.innerHTML=\'<div class=\\\'img-placeholder\\\'>❌ Invalid URL</div>\'">';
   else prev.innerHTML='<div class="img-placeholder">🖼️<br>Paste image URL above to preview</div>';
 }
 function saveProduct(){
   var name=document.getElementById('fName').value.trim(),price=parseInt(document.getElementById('fPrice').value),stock=parseInt(document.getElementById('fStock').value);
   if(!name||!price||isNaN(stock)){showToast('⚠️ Please fill all required fields!','warn');return;}
   var specs=[];
-  if(document.getElementById('fSpec1').value) specs.push(document.getElementById('fSpec1').value);
-  if(document.getElementById('fSpec2').value) specs.push(document.getElementById('fSpec2').value);
-  if(document.getElementById('fSpec3').value) specs.push(document.getElementById('fSpec3').value);
+  if(document.getElementById('fSpec1').value)specs.push(document.getElementById('fSpec1').value);
+  if(document.getElementById('fSpec2').value)specs.push(document.getElementById('fSpec2').value);
+  if(document.getElementById('fSpec3').value)specs.push(document.getElementById('fSpec3').value);
   var data={name:name,category:document.getElementById('fCat').value,description:document.getElementById('fDesc').value,price:price,discount:parseInt(document.getElementById('fDiscount').value)||0,stock:Math.max(0,stock),badge:document.getElementById('fBadge').value,specs:specs,icon:document.getElementById('fIcon').value||'🚲',image:document.getElementById('fImg').value.trim()};
   if(editingId){for(var i=0;i<products.length;i++){if(products[i].id===editingId){for(var k in data)products[i][k]=data[k];break;}}showToast('Product updated! ✅');}
   else{data.id=Date.now();products.push(data);showToast('Product added! ✅');}
@@ -1486,14 +1201,10 @@ function showToast(msg,type){
 }
 
 // ══════════════════════════════════════
-// MODAL CLOSE ON BACKDROP
+// MODAL BACKDROP CLOSE
 // ══════════════════════════════════════
 ['cartModal','wishlistModal','reviewModal','productFormModal','adminLogin'].forEach(function(id){
-  document.getElementById(id).addEventListener('click',function(e){
-    if(e.target.id===id){
-      document.getElementById(id).classList.remove('open');
-    }
-  });
+  document.getElementById(id).addEventListener('click',function(e){if(e.target.id===id)document.getElementById(id).classList.remove('open');});
 });
 
 // ══════════════════════════════════════
@@ -1512,16 +1223,13 @@ function jumpCat(cat){
   document.getElementById('products').scrollIntoView({behavior:'smooth'});
   setTimeout(function(){
     var btns=document.querySelectorAll('.fbtn');
-    for(var i=0;i<btns.length;i++){
-      btns[i].classList.remove('active');
-      var txt=btns[i].textContent.toLowerCase();
-      if(cat==='all'&&txt.includes('all'))btns[i].classList.add('active');
-      else if(cat!=='all'&&txt.includes(cat))btns[i].classList.add('active');
-    }
+    for(var i=0;i<btns.length;i++){btns[i].classList.remove('active');var txt=btns[i].textContent.toLowerCase();if(cat==='all'&&txt.includes('all'))btns[i].classList.add('active');else if(cat!=='all'&&txt.includes(cat))btns[i].classList.add('active');}
     currentCat=cat;renderShop();
   },600);
 }
 
+// ══════════════════════════════════════
+// INIT
 // ══════════════════════════════════════
 applySettingsToPage();
 renderShop();
@@ -1530,18 +1238,14 @@ updateWishBadge();
 updateAllBadges();
 slideTimer=setInterval(function(){goSlide(slideIdx+1);},5000);
 
-// =============================================
+// ══════════════════════════════════════
 // MOBILE NAVIGATION
-// =============================================
+// ══════════════════════════════════════
 function toggleMobileNav(){
-  var btn=document.getElementById('hamburgerBtn');
-  var drawer=document.getElementById('mobileNavDrawer');
-  var overlay=document.getElementById('mobileNavOverlay');
+  var btn=document.getElementById('hamburgerBtn');var drawer=document.getElementById('mobileNavDrawer');var overlay=document.getElementById('mobileNavOverlay');
   var isOpen=drawer.classList.contains('open');
-  if(isOpen){closeMobileNav();}else{
-    btn.classList.add('open');drawer.classList.add('open');overlay.classList.add('open');
-    document.body.style.overflow='hidden';
-  }
+  if(isOpen)closeMobileNav();
+  else{btn.classList.add('open');drawer.classList.add('open');overlay.classList.add('open');document.body.style.overflow='hidden';}
 }
 function closeMobileNav(){
   document.getElementById('hamburgerBtn').classList.remove('open');
@@ -1549,64 +1253,38 @@ function closeMobileNav(){
   document.getElementById('mobileNavOverlay').classList.remove('open');
   document.body.style.overflow='';
 }
-function setActiveNav(id){
-  document.querySelectorAll('.bnav-item').forEach(function(el){el.classList.remove('active');});
-  var el=document.getElementById(id);if(el) el.classList.add('active');
-}
+function setActiveNav(id){document.querySelectorAll('.bnav-item').forEach(function(el){el.classList.remove('active');});var el=document.getElementById(id);if(el)el.classList.add('active');}
 function scrollToTop(){window.scrollTo({top:0,behavior:'smooth'});}
-function focusSearch(){
-  document.getElementById('heroSection').scrollIntoView({behavior:'smooth'});
-  setTimeout(function(){var s=document.getElementById('heroSearch');if(s)s.focus();},650);
-}
+function focusSearch(){document.getElementById('heroSection').scrollIntoView({behavior:'smooth'});setTimeout(function(){var s=document.getElementById('heroSearch');if(s)s.focus();},650);}
 function updateAllBadges(){
-  var ct=0;for(var i=0;i<cart.length;i++)ct+=cart[i].qty;
-  var wt=wishlist.length;
-  document.getElementById('cartCount').textContent=ct;
-  document.getElementById('wishCount').textContent=wt;
+  var ct=0;for(var i=0;i<cart.length;i++)ct+=cart[i].qty;var wt=wishlist.length;
+  document.getElementById('cartCount').textContent=ct;document.getElementById('wishCount').textContent=wt;
   var mc=document.getElementById('mCartCount');if(mc)mc.textContent=ct;
   var mw=document.getElementById('mWishCount');if(mw)mw.textContent=wt;
-  var bc=document.getElementById('bnavCartCount');
-  if(bc){bc.textContent=ct;bc.style.display=ct>0?'flex':'none';}
-  var bw=document.getElementById('bnavWishCount');
-  if(bw){bw.textContent=wt;bw.style.display=wt>0?'flex':'none';}
+  var bc=document.getElementById('bnavCartCount');if(bc){bc.textContent=ct;bc.style.display=ct>0?'flex':'none';}
+  var bw=document.getElementById('bnavWishCount');if(bw){bw.textContent=wt;bw.style.display=wt>0?'flex':'none';}
 }
 
-// Swipe on hero slides
+// Swipe hero
 (function(){
-  var hero=document.getElementById('heroSection');
-  if(!hero) return;
-  var sx=0,sy=0;
+  var hero=document.getElementById('heroSection');if(!hero)return;var sx=0,sy=0;
   hero.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;sy=e.touches[0].clientY;},{passive:true});
-  hero.addEventListener('touchend',function(e){
-    var dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;
-    if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)){if(dx<0)shiftSlide(1);else shiftSlide(-1);}
-  },{passive:true});
+  hero.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)){if(dx<0)shiftSlide(1);else shiftSlide(-1);}},{passive:true});
 })();
 
-// Swipe down modals to close
+// Swipe down to close modals
 ['cartModal','wishlistModal','reviewModal'].forEach(function(mid){
-  var el=document.getElementById(mid);if(!el) return;
-  var box=el.querySelector('.modal-box,.rev-modal');if(!box) return;
-  var sy2=0;
+  var el=document.getElementById(mid);if(!el)return;var box=el.querySelector('.modal-box,.rev-modal');if(!box)return;var sy2=0;
   box.addEventListener('touchstart',function(e){sy2=e.touches[0].clientY;},{passive:true});
-  box.addEventListener('touchend',function(e){
-    var dy=e.changedTouches[0].clientY-sy2;
-    if(dy>80){el.classList.remove('open');}
-  },{passive:true});
+  box.addEventListener('touchend',function(e){if(e.changedTouches[0].clientY-sy2>80)el.classList.remove('open');},{passive:true});
 });
 
-// Scroll -> bottom nav active
-window.addEventListener('scroll',function(){
-  var py=window.pageYOffset;
-  var prod=document.getElementById('products');
-  if(prod&&py>=prod.offsetTop-120){setActiveNav('bnav-shop');}
-  else if(py<300){setActiveNav('bnav-home');}
-},{passive:true});
+// Scroll -> active bottom nav
+window.addEventListener('scroll',function(){var py=window.pageYOffset;var prod=document.getElementById('products');if(prod&&py>=prod.offsetTop-120)setActiveNav('bnav-shop');else if(py<300)setActiveNav('bnav-home');},{passive:true});
 
-// Patch badge functions
+// Patch badges
 var _oCB=updateCartBadge;updateCartBadge=function(){_oCB();updateAllBadges();};
 var _oWB=updateWishBadge;updateWishBadge=function(){_oWB();updateAllBadges();};
-
 </script>
 </body>
 </html>
